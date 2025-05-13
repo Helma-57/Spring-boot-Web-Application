@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.service.UserServiceTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-13T11:40:15" hostname="DESKTOP-K8K5JRI" time="0.037">
+  <properties/>
+  <testcase name="testRemoveUser()" classname="com.example.demo.service.UserServiceTests" time="0.037"/>
+  <system-out><![CDATA[Zanele added with ID: 1
+Zanele removed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
