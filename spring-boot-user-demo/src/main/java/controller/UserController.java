@@ -27,3 +27,9 @@ public class UserController {
         return name + " added via GET.";
     }
 
+    @GetMapping("/{id}")
+    public String getUser(@PathVariable long id) {
+        service.getUser(id);
+        return "User lookup done. See console.";
+    }
+
