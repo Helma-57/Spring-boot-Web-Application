@@ -20,3 +20,14 @@ public class FakeRepo implements FakeRepoInterface {
     public User findUserById(long id) {
         return users.stream().filter(u -> u.getId() == id).findFirst().orElse(null);
     }
+
+    @Override
+    public String deleteUser(long id) {
+        User user = findUserById(id);
+        if (user != null) {
+            users.remove(user);
+            return user.getName();
+        }
+        return null;
+    }
+}
