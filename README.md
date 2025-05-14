@@ -5,6 +5,7 @@ Simple project using Spring Boot to manage users in-memory.
 
 ## Run
 ==cd spring-boot-user-demo
+
 ==./gradlew bootRun
 
 ## Test
