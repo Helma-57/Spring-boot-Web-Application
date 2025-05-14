@@ -9,3 +9,9 @@ import java.util.List;
 @Repository
 public class FakeRepo implements FakeRepoInterface {
     private List<User> users = new ArrayList<>();
+
+    @Override
+    public String insertUser(long id, String name, String surname) {
+        users.add(new User(id, name, surname));
+        return name;
+    }
