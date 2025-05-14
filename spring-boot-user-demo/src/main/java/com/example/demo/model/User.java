@@ -10,3 +10,6 @@ public class User {
         this.name = name;
         this.surname = surname;
     }
+
+    public long getId() { return id; }
+    public void setId(long id) { this.id = id; }
