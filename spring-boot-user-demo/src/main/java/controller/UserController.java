@@ -15,3 +15,9 @@ public class UserController {
         this.service = service;
     }
 
+    @PostMapping("/{name}/{surname}")
+    public String addUser(@PathVariable String name, @PathVariable String surname) {
+        service.addUser(name, surname);
+        return name + " added successfully.";
+    }
+
