@@ -15,3 +15,8 @@ public class FakeRepo implements FakeRepoInterface {
         users.add(new User(id, name, surname));
         return name;
     }
+
+    @Override
+    public User findUserById(long id) {
+        return users.stream().filter(u -> u.getId() == id).findFirst().orElse(null);
+    }
