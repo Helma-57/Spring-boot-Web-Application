@@ -21,3 +21,9 @@ public class UserController {
         return name + " added successfully.";
     }
 
+    @GetMapping("/add/{name}/{surname}")
+    public String addUserViaGet(@PathVariable String name, @PathVariable String surname) {
+        service.addUser(name, surname);
+        return name + " added via GET.";
+    }
+
