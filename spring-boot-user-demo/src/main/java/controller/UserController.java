@@ -33,3 +33,9 @@ public class UserController {
         return "User lookup done. See console.";
     }
 
+    @DeleteMapping("/{id}")
+    public String deleteUser(@PathVariable long id) {
+        service.removeUser(id);
+        return "Delete attempted. See console.";
+    }
+
