@@ -18,3 +18,11 @@ public void testGetUser() {
     service.addUser("Gabaza", "Makhubele");
     service.getUser(1);
 }
+
+@Test
+public void testRemoveUser() {
+    UserServiceImpl service = new UserServiceImpl(new FakeRepo());
+    service.addUser("Zanele", "Makhubele");
+    service.removeUser(1);
+}
+}
