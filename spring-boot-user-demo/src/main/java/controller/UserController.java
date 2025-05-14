@@ -39,3 +39,9 @@ public class UserController {
         return "Delete attempted. See console.";
     }
 
+    @GetMapping("/")
+    public String hello() {
+        return "Welcome to the Spring Boot User API!";
+    }
+}
+
