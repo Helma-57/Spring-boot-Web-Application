@@ -12,3 +12,9 @@ public class UserServiceTests {
     }
 
 }
+@Test
+public void testGetUser() {
+    UserServiceImpl service = new UserServiceImpl(new FakeRepo());
+    service.addUser("Gabaza", "Makhubele");
+    service.getUser(1);
+}
